@@ -1,0 +1,35 @@
+{
+  "name": "rollup-plugin-tsc-alias",
+  "version": "1.0.0",
+  "description": "Replace alias paths with relative paths after typescript compilation during rollup bundling",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/valentiniljaz/rollup-plugin-clean-after.git"
+  },
+  "keywords": [
+    "rollup",
+    "plugin",
+    "typescript",
+    "paths",
+    "alias"
+  ],
+  "author": "Valentin Iljaž <valentin.iljaz@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/valentiniljaz/rollup-plugin-clean-after/issues"
+  },
+  "files": [
+    "*.js"
+  ],
+  "homepage": "https://github.com/valentiniljaz/rollup-plugin-clean-after#readme",
+  "dependencies": {
+    "tsc-alias": "^1.6.4"
+  },
+  "peerDependencies": {
+    "rollup": "> 1.0"
+  }
+}

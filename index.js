@@ -1,20 +1,11 @@
-'use strict'
-
-const cp = require('child_process')
+const tscAlias = require('tsc-alias');
 
 module.exports = function() {
-  return {
-    name: 'tscAlias',
-    writeBundle() {
-      return new Promise((resolve, reject) => {
-        cp.exec("tsc-alias", function callback(error, stdout, stderr) {
-            if (stderr || error) {
-                reject(stderr || error);
-            } else {
-                resolve(stdout);
-            }
-        });
-      });
-    },
+    return {
+      name: 'tscAlias',
+      async writeBundle(options) {
+        return tscAlias.replaceTscAliasPaths(options);
+      }
+    }
   }
-}
+  

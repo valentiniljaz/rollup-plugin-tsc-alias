@@ -1,11 +1,10 @@
 const tscAlias = require('tsc-alias');
 
-module.exports = function() {
-    return {
-      name: 'tscAlias',
-      async writeBundle(options) {
-        return tscAlias.replaceTscAliasPaths(options);
-      }
-    }
-  }
-  
+module.exports = function (options) {
+  return {
+    name: 'tscAlias',
+    async writeBundle() {
+      return tscAlias.replaceTscAliasPaths(options);
+    },
+  };
+};

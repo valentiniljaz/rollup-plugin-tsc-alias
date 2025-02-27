@@ -25,12 +25,14 @@ export default {
     dest: './dist/bundle.js',
   },
   plugins: [
-    tscAlias()
+    tscAlias({
+      // OPTIONS
+    })
   ]
 };
 ```
 
-Here are all the available options:
+All the available options:
 
 <table>
   <thead>

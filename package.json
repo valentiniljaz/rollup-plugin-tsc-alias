@@ -1,6 +1,6 @@
 {
   "name": "rollup-plugin-tsc-alias",
-  "version": "1.1.3",
+  "version": "1.1.4",
   "description": "Replace alias paths with relative paths after typescript compilation during rollup bundling (tsc-alias)",
   "main": "index.js",
   "scripts": {
@@ -27,7 +27,7 @@
   ],
   "homepage": "https://github.com/valentiniljaz/rollup-plugin-tsc-alias#readme",
   "dependencies": {
-    "tsc-alias": "^1.8.10"
+    "tsc-alias": "^1.8.11"
   },
   "peerDependencies": {
     "rollup": "> 2.0"
